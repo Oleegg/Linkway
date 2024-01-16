@@ -107,6 +107,11 @@
 
 .blue {
   color: #01369d;
+  fill: #01369d;
+}
+
+.light-blue {
+  fill: #c0cde6;
 }
 
 .main-top {
@@ -403,7 +408,7 @@ input::placeholder {
 }
 .contacts h2 {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 .contacts__content {
   display: flex;
@@ -418,15 +423,75 @@ input::placeholder {
   flex-direction: column;
   max-width: 330px;
   gap: 20px;
+  font-size: 18px;
+  font-weight: 300;
 }
 .address h5,
 .time h5,
 .connect h5 {
   margin: 10px;
+  font-size: 18px;
 }
 
-.footer {
+.footer-wrapper {
   background-color: #01369d;
   color: #fff;
   width: 100%;
+  padding: 70px 0 40px 60px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 27px;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.footer__logo svg {
+  fill: #fff;
+}
+.footer__phone {
+  margin-left: 0;
+}
+.footer ul {
+  padding-left: 0;
+}
+.footer__link {
+  list-style: none;
+}
+.footer__link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.social__square {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1803921569);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social__square .svg-f:hover {
+  fill: #01369d;
+}
+.social__square .svg-y:hover {
+  fill: #f95b3d;
 }

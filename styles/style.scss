@@ -103,6 +103,11 @@
 
 .blue {
   color: #01369d;
+  fill: #01369d;
+}
+
+.light-blue {
+  fill: #c0cde6;
 }
 
 //-----------main top--------------------
@@ -414,7 +419,7 @@ input::placeholder {
   margin-bottom: 140px;
   h2 {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
   &__content {
     display: flex;
@@ -428,17 +433,78 @@ input::placeholder {
 .connect {
   h5 {
     margin: 10px;
+    font-size: 18px;
   }
   display: flex;
   flex-direction: column;
   max-width: 330px;
   gap: 20px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 //------footer--------------
-
-.footer {
+.footer-wrapper {
   background-color: #01369d;
   color: #fff;
   width: 100%;
+  padding: 70px 0 40px 60px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+
+    font-size: 27px;
+    font-family: "Montserrat";
+    letter-spacing: 1px;
+    font-weight: 500;
+    svg {
+      fill: #fff;
+    }
+  }
+  &__phone {
+    margin-left: 0;
+  }
+  ul {
+    padding-left: 0;
+  }
+  &__link {
+    list-style: none;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  margin-top: 20px;
+  &__square {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ffffff2e;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .svg-f:hover {
+      fill: #01369d;
+    }
+    .svg-y:hover {
+      fill: #f95b3d;
+    }
+  }
 }
