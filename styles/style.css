@@ -19,7 +19,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   top: -10px;
-  right: -600px;
+  right: -610px;
   width: 1295px;
   height: 710px;
   z-index: -5;
@@ -255,6 +255,7 @@
   padding: 40px 34px 0 34px;
   border: 1px solid rgba(1, 53, 157, 0.1019607843);
   box-shadow: 0px 4px 4px 2px rgba(1, 53, 157, 0.1019607843);
+  box-shadow: 0px -5px 5px -5px rgba(1, 53, 157, 0.1019607843) inset;
 }
 .events__card-title {
   font-family: "Oswald";
@@ -281,7 +282,7 @@
 .advantages__cards {
   display: flex;
   gap: 23px;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 }
 .advantages__card {
   background-repeat: no-repeat;
@@ -290,7 +291,7 @@
 }
 .advantages__card-title {
   font-family: "Oswald";
-  font-weight: 100;
+  font-weight: 300;
   font-size: 27px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -310,7 +311,122 @@
 }
 .advantages__2 {
   background-image: url("../images/png/2.png");
+  padding-left: 60px;
 }
 .advantages__3 {
   background-image: url("../images/png/3.png");
+  padding-left: 80px;
+}
+
+.partner {
+  margin-bottom: 120px;
+}
+
+.form-title {
+  font-weight: 300;
+  text-transform: inherit;
+  font-size: 27px;
+  align-self: flex-start;
+}
+
+input {
+  display: block;
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #0a0a0b;
+  background-color: transparent;
+  font-weight: 300;
+  font-size: 19px;
+}
+
+input::-moz-placeholder {
+  color: #0a0a0b;
+}
+
+input::placeholder {
+  color: #0a0a0b;
+}
+
+.label {
+  border-bottom: 0.5px solid #939393;
+  padding-bottom: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 70px;
+}
+.form__top, .form__midle, .form__additionally {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 42px;
+}
+.form__top div, .form__midle div, .form__additionally div {
+  width: 43%;
+}
+.form__btn {
+  margin-top: 80px;
+  align-self: center;
+}
+
+.registr {
+  position: relative;
+  margin-bottom: 120px;
+}
+.registr-rect {
+  position: absolute;
+  background-image: url("../images/svg/rect-registr.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -570px;
+  right: -1870px;
+  width: 1890px;
+  height: 1630px;
+  z-index: -5;
+}
+.registr h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.registr__label {
+  padding-top: 40px;
+}
+
+.contacts {
+  padding-right: 70px;
+  margin-bottom: 140px;
+}
+.contacts h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.contacts__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.address,
+.time,
+.connect {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  gap: 20px;
+}
+.address h5,
+.time h5,
+.connect h5 {
+  margin: 10px;
+}
+
+.footer {
+  background-color: #01369d;
+  color: #fff;
+  width: 100%;
 }
