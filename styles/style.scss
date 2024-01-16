@@ -258,8 +258,9 @@
     padding: 40px 34px 0 34px;
     border: 1px solid #01359d1a;
     box-shadow: 0px 4px 4px 2px #01359d1a;
-    // -webkit-box-shadow: 4px 0px 4px 4px #01359d1a, -4px 0px 4px 4px #01359d1a;
-    // -moz-box-shadow: 4px 0px 4px 4px #01359d1a, -4px 0px 4px 4px #01359d1a;
+    -webkit-box-shadow: 0px -5px 5px -5px #01359d1a inset;
+    -moz-box-shadow: 0px -5px 5px -5px #01359d1a inset;
+    box-shadow: 0px -5px 5px -5px #01359d1a inset;
     &-title {
       font-family: "Oswald";
       font-weight: bold;
